@@ -1,0 +1,23 @@
+.navbarTile,
+.navbarTile > div {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 40px;
+  line-height: 40px;
+}
+
+.isLink {
+  &:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.selected,
+.selected > div {
+  color: rgba(255, 255, 255, 1);
+}
