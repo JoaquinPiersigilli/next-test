@@ -1,23 +1,29 @@
-.navbarTile,
-.navbarTile > div {
+.navbarTile {
   display: flex;
   gap: 4px;
   align-items: center;
   font-size: 16px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.2);
+  color: #6e717f;
   margin-bottom: 40px;
   line-height: 40px;
+
+  &:hover {
+    > img {
+      filter: brightness(0) saturate(100%) invert(84%) sepia(15%)
+        saturate(1263%) hue-rotate(28deg) brightness(114%) contrast(101%);
+    }
+  }
 }
 
 .isLink {
   &:hover {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.5);
+    color: #e2ff73;
   }
 }
 
 .selected,
 .selected > div {
-  color: rgba(255, 255, 255, 1);
+  color: #e2ff73;
 }

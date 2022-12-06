@@ -4,7 +4,8 @@
   display: -webkit-flex;
   display: flex;
   position: relative;
-  justify-content: center;
+  //justify-content: center;
+  justify-content: space-between;
 
   @include respond-below(smm) {
     flex-direction: column;
@@ -14,11 +15,16 @@
 }
 
 .hypercoreLogo {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-left: 120px;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  @include respond-below(md) {
+    padding-left: 40px;
+  }
   @include respond-below(smm) {
     position: static;
+    padding-left: 0px;
   }
 }
 
@@ -32,7 +38,13 @@
   justify-content: center;
   list-style-type: none;
   padding-inline-start: 0px;
+  padding-right: 100px;
+
   > * {
-    padding-right: 24px;
+    padding-right: 40px;
+  }
+
+  @include respond-below(md) {
+    padding-right: 0;
   }
 }

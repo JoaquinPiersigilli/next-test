@@ -9,7 +9,7 @@ import styles from "./component.module.scss";
 const Navbar = ({
   selected,
 }: {
-  selected: "proposals" | "discuss" | "vote";
+  selected: "proposals" | "discuss" | "vote" | "/";
 }) => {
   return (
     <div className={styles.navbarContainer}>

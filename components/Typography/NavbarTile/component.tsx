@@ -35,7 +35,13 @@ const NavbarTile = ({
       ) : (
         children
       )}
-      {showArrow && <Image src={DiagonalArrowIcon} alt={"Diagonal Arrow"} />}
+      {showArrow && (
+        <Image
+          src={DiagonalArrowIcon}
+          className={styles.filterGreen}
+          alt={"Diagonal Arrow"}
+        />
+      )}
     </div>
   );
 };
