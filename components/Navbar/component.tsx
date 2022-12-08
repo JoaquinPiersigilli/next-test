@@ -19,7 +19,7 @@ const Navbar = ({
       <div className={styles.ul}>
         <div>
           <NavbarTile isSelected={selected === "proposals"}>
-            Proposals
+            Proposalssss
           </NavbarTile>
         </div>
         <div>
